@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Register - JobFinder</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <div class="container">
+    <div class="card" style="max-width:520px;margin:0 auto">
+      <h2>Create Account</h2>
+      <form id="register-form">
+        <input id="reg-name" type="text" placeholder="Full name" required />
+        <input id="reg-email" type="email" placeholder="Email" required />
+        <input id="reg-password" type="password" placeholder="Password" required />
+        <select id="reg-role">
+          <option value="seeker">Job Seeker</option>
+          <option value="employer">Employer</option>
+        </select>
+        <label class="small">Upload Resume (optional) - PDF / DOC / DOCX</label>
+        <input id="reg-resume-file" type="file" accept=".pdf,.doc,.docx,.txt" />
+        <button class="primary" type="submit">Register & Upload</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

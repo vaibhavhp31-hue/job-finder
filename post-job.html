@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Post Job - JobFinder</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <div class="container">
+    <div class="card" style="max-width:700px;margin:0 auto">
+      <h2>Post a Job</h2>
+      <form id="postjob-form">
+        <input id="job-title" type="text" placeholder="Job Title" required />
+        <input id="job-company" type="text" placeholder="Company Name" required />
+        <input id="job-location" type="text" placeholder="Location (city)" />
+        <input id="job-skills" type="text" placeholder="Skills (comma separated)" />
+        <input id="job-salary" type="text" placeholder="Salary (optional)" />
+        <input id="job-contact" type="text" placeholder="Contact Number (e.g. 9123456789)" />
+        <textarea id="job-desc" placeholder="Job description" rows="5"></textarea>
+        <button class="primary" type="submit">Post Job</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
